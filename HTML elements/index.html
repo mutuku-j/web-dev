@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Eight Web Assignment</title>
+</head>
+<style>
+    header {
+        background-color: black;
+        display: flex;
+        gap: 20px;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .container {
+        text-align: center;
+        margin: 40px;
+    }
+
+    .logo {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+        animation: rotate 2s infinite linear;
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .slogan {
+        font-size: 2em;
+        color: #333;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .container p {
+        font-size: larger;
+        color: #333;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        font-size: 2rem;
+        height: 100px;
+        justify-items: center;
+        align-content: center;
+        position:fixed;
+        width: 100%;
+        bottom: 0;
+    }
+</style>
+
+<body>
+    <header>
+        <a href="index.html">HOME</a>
+        <a href="ordered list.html">ORDERED LIST</a>
+        <a href="un ordered list.html">UN-ORDERED LIST</a>
+        <a href="images.html">IMAGES</a>
+        <a href="links.html">LINKS</a>
+        <a href="formating effects.html">FORMATTING EFFECTS</a>
+        <a href="tables.html">TABLES</a>
+    </header>
+    <main>
+        <div class="container">
+            <img src="imgs/group 8 logo.jpg" alt=" Logo" class="logo">
+            <h1 class="slogan">Welcome to Our Simple Website</h1>
+            <p> Click on any elements on the header to see how they are implemented in HTML </p>
+        </div>
+
+    </main>
+    
+    <footer>
+        <p>Group 8</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <style>
+        form {
+            border: 1px solid;
+            padding: 8px;
+        }
+
+        form div {
+            border: 1px solid;
+            padding: 8px
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Muscle Gym Member Registration</h1>
+    <form action="">
+        <label for="Firstname">Name:</label>
+        <input type="text" placeholder="Firstname">
+
+        <label for="Secondname"> Secondname:</label>
+        <input type="text" placeholder="Secondname"><br><br>
+
+        <label for="Phonenumber"> Phone Number:</label>
+        <input type="number" placeholder="Phone Number"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Email"><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" placeholder="Age"><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" placeholder="Date of Birth"><br><br>
+
+        Gender:
+        <input type="radio" id="male" name="Gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="Gender" value="Female">
+        <label for="female">Female</label><br><br>
+
+        Address:<br>
+        <textarea name="address" placeholder="Address" id="address" rows="10"></textarea><br><br>
+
+        <div>
+            Membership Details <br><br>
+
+            <label for="Joining Date">Joining Date</label>
+            <input type="date" placeholder="Joining Date"><br><br>
+
+            Membership Type:
+            <input type="radio" id="basic" name="Membership Type" value="Basic">
+            <label for="basic">Basic(Gym) </label>
+
+            <input type="radio" id="gold" name="Membership Type" value="gold">
+            <label for="gold">Gold(Gym+Cardio) </label>
+
+            <input type="radio" id="premium" name="Membership Type" value="premium">
+            <label for="premium">Premium(Gym+Cardio+Crossfit) </label><br><br><br>
+
+            <label for="duration">Duration:</label>
+            <select name="duration" id="duration">
+                <option value="1 month">1 Month</option>
+                <option value="2 month">2 Months</option>
+                <option value="3 month">3 Months</option>
+            </select><br><br><br>
+
+            Are you interested in any of the following?
+            <input type="checkbox" id="yoga" name="interests" value="Yoga">
+            <label for="yoga">Yoga</label>
+
+            <input type="checkbox" id="free trail" name="interests" value="Free Trail">
+            <label for="free trail">Free Trail</label>
+
+            <input type="checkbox" id="zumba" name="interests" value="Zumba">
+            <label for="zumba">Zumba</label>
+
+            <input type="checkbox" id="piloxing" name="interests" value="piloxing">
+            <label for="piloxing">Piloxing</label>
+
+            <input type="checkbox" id="diet plan" name="interests" value="Diet Plan">
+            <label for="diet plan">Diet Plan</label>
+        </div><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset"><br><br>
+
+        <a href="home.html">Back</a>
+    </form>
+</body>
+
+</html>
