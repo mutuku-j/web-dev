@@ -24,7 +24,8 @@ app.config['MAIL_DEFAULT_SENDER'] = os.environ.get('MAIL_DEFAULT_SENDER')
 
 # Database configuration
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get(
-    'SQLALCHEMY_DATABASE_URI', os.environ.get('DATABASE_URL')
+    'SQLALCHEMY_DATABASE_URI',
+    'mysql+pymysql://root:5441_MutukunewPASS@localhost/grao_db'
 )
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
