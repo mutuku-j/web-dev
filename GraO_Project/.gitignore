@@ -29,14 +29,22 @@ Thumbs.db
 # OneDrive temporary files
 ~$*
 
-# dotenv
-.env.example
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+.secrets/
 
-.requirements.text
+# Local backups
 .grao_backup
 
 # Database files
 *.sqlite3
+*.sqlite
 *.db
 
 # Logs
