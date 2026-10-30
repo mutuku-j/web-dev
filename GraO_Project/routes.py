@@ -36,7 +36,7 @@ def availability_dashboard():
 
 @app.route('/availability_data/<int:pitch_id>')
 def availability_data(pitch_id):
-    bookings = Booking.query.filter_by(pitch_id=pitch_id).order_by(Booking.booking_date, Booking.start_time).all()
+    bookings = Booking.query.filter_by(pitch_id=pitch_id).order_by(Booking.booking_date, Booking.start_time, Booking.purpose).all()
     events = []
 
     for booking in bookings:
@@ -44,7 +44,7 @@ def availability_data(pitch_id):
         end = datetime.combine(booking.booking_date, booking.end_time)
         events.append({
             'id': booking.id,
-            'title': f"{booking.booker_name} ({booking.status})",
+            'title': f" Booked by {booking.booker_name} for {booking.purpose} from {booking.start_time} to {booking.end_time}",
             'start': start.isoformat(),
             'end': end.isoformat(),
             'color': '#198754' if booking.is_verified else '#dc3545',
